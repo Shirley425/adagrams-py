@@ -36,7 +36,7 @@ def draw_letters():
     for alphabet, frenquency in LETTER_POOL.items():
         letter_pool_list.extend([alphabet] * frenquency)
 
-    while len(letter_list)<10:
+    while len(letter_list) < 10:
         i = randint(0, len(letter_pool_list)-1)
         letter_list.append(letter_pool_list[i])
         letter_pool_list.pop(i)
